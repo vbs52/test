@@ -1,4 +1,13 @@
 import pandas as pd
-s=pd.read_csv('data.csv')
-c=s.isnull().sum()
-c.to_csv("0520-1.csv")
+
+df = pd.DataFrame({
+
+    "name": ["Amy", "Bob", "Cathy", "David", "Evan", "Fiona"],
+
+    "age": [20, 21, 19, 22, 20, 23],
+
+    "score": [88, 92, 79, 85, 90, 95]
+
+})
+
+print(df.info())
